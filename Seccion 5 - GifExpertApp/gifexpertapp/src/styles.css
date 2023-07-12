@@ -61,3 +61,72 @@
   .card img {
     width: 100%;
   }
+
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* .header-container button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  } */
+  
+  /* .header-container button:hover{
+    cursor: pointer;
+    padding: .5rem 1.2rem;
+    font-size: 18px;
+    border: none;
+    background-color: #a13d3d;
+    border-radius: 1rem;
+    -webkit-box-shadow: inset 2px 2px 15px -3px rgba(0,0,0,0.64);
+    -moz-box-shadow: inset 2px 2px 15px -3px rgba(0,0,0,0.64);
+    box-shadow: inset 2px 2px 15px -3px rgba(0,0,0,0.64);
+  } */
+  
+  .button{
+    position:relative;
+    display:inline-block;
+    /* margin:20px; */
+  }
+  
+  .button a{
+    color:black;
+    font-size:18px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#cfcfcf;
+    display:block;
+    position:relative;
+    padding:10px 10px;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 rgb(77, 76, 76);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color:red;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:green;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+

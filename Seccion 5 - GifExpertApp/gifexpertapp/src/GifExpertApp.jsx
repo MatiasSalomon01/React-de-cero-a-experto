@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AddCategory, GifGrid } from "./components"
+import { AddCategory, GifGrid, ClearButton } from "./components"
 
 export const GifExpertApp = () => {
 
@@ -12,11 +12,18 @@ export const GifExpertApp = () => {
         setCategories([newCategory, ...categories]);
     }
 
+    const clearAll = () => {
+       setCategories([]);
+    }
+
     return (
         <>
-            <h1>GifExpertApp</h1>
+            <div className="header-container">
+                <h1>GifExpertApp</h1>
+                <ClearButton clear={ clearAll }/>
+            </div>
             <AddCategory
-                onNewCategory={onAddCategory}
+                onNewCategory={ onAddCategory }
             />
             {
                 categories.map(category =>
@@ -26,6 +33,8 @@ export const GifExpertApp = () => {
                     />
                 )
             }
+
+            
         </>
     )
 }
