@@ -13,10 +13,16 @@ const useForm = ( initialForm ) => {
         });
     }
 
+    const onResetForm = () => {
+        console.log('asdasdasd');
+        setFormState( initialForm );
+    }
+
     return (
         {...formState},
         formState,
-        onInputChange
+        onInputChange,
+        onResetForm
     )
 }
 
