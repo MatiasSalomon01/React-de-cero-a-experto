@@ -19,7 +19,7 @@ const TodoAdd = ({onNewTodo}) => {
 
         onNewTodo(newTodo);
         onResetForm();
-    }
+        }
 
     return (
         <form onSubmit={onFormSubmit}>
