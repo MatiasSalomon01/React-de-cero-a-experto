@@ -2,11 +2,12 @@ import { Navigate, Route, Routes } from "react-router-dom"
 import HomePage from "./HomePage"
 import AboutPage from "./AboutPage"
 import LoginPage from "./LoginPage"
-import Navbar from "./Navbar"
+import Navbar from "../../Navbar"
+import UserProvider from "../UserProvider"
 
 const MainApp = () => {
   return (
-    <>
+    <UserProvider>
         <h1>MainApp</h1>
             <Navbar/>
         <hr />
@@ -17,7 +18,7 @@ const MainApp = () => {
             <Route path="/login" element={<LoginPage/>}/>
             <Route path="/*" element={<Navigate to="/about"/>}/>
         </Routes>
-    </>
+    </UserProvider>
   )
 }
 
