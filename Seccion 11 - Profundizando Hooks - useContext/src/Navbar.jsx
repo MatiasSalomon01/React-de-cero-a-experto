@@ -20,7 +20,7 @@ const Navbar = () => {
                         <NavLink
                             to="/login"
                             className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-                            About
+                            Login
                         </NavLink>
                     </ul>
                 </div>
